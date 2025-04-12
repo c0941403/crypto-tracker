@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s ease;
+  }
+  
+  :root {
+    --bg-color: #111;
+    --text-color: #f1f1f1;
+    --card-bg: #1e1e1e;
+    --compare-border: #00c896;
+  }
+  
+  body.light {
+    --bg-color: #f1f1f1;
+    --text-color: #111;
+    --card-bg: #ffffff;
+    --compare-border: #007bff;
+  }
+  
+  header {
+    background: #222;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Theme: Light */
+body.light {
+    background: #f9f9f9;
+    color: #111;
+  }
+  
+  body.light header {
+    background: #ffffff;
+    color: #111;
+  }
+  
+  /* Theme: Dark */
+  body.dark {
+    background: #111;
+    color: #f1f1f1;
+  }
+  
+  body.dark header {
+    background: #222;
+    color: #f1f1f1;
+  }  
+
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .controls {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .controls input,
+  .controls select,
+  .controls button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .crypto-card {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+  
+  .crypto-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .crypto-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .crypto-card p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+  }
+  
+  .crypto-card button {
+    margin-top: 8px;
+    background: #00c896;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .crypto-card .remove-btn {
+    background: crimson;
+  }
+  
+  .compare-grid .crypto-card {
+    border: 2px solid var(--compare-border);
+  }
+  
+  #export-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 600px) {
+    .controls {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .controls input {
+      width: 90%;
+    }
+  }
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real-Time Cryptocurrency Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="site-logo" />
+        <h1>Real-Time Cryptocurrency Tracker</h1>
+    </div>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search cryptocurrencies..." />
+      <select id="sort-options">
+        <option value="desc">Sort by Market Cap (High to Low)</option>
+        <option value="asc">Sort by Market Cap (Low to High)</option>
+      </select>
+      <button id="toggle-24h">Toggle 24h Change</button>
+      <button id="theme-toggle">Light/Dark</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="crypto-list-section">
+      <h2>Cryptocurrencies</h2>
+      <div id="crypto-list" class="grid"></div>
+    </section>
+
+    <section id="favorites-section">
+      <h2>Favorite Cryptocurrencies</h2>
+      <div id="favorite-list" class="grid"></div>
+    </section>
+
+    <section id="comparison-section">
+      <h2>Comparison (Max 5)</h2>
+      <div id="comparison-list" class="grid compare-grid"></div>
+      <button id="export-btn">Export Comparison</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Crypto Tracker | Built with ❤️ for Final Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
